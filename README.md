@@ -1,7 +1,7 @@
 # Semi-technical-Interview-Task
 
 <p align="center">
-  <img src="images/Screenshot 2025-05-21 at 13.04.36.png" alt="Single-layer Perceptron" width="800"/>
+  <img src="/Users/rohanxc/Developer/Semi-technical-Interview-Task/images/Screenshot 2025-05-21 at 13.04.36.png" alt="Single-layer Perceptron" width="800"/>
 </p>
 
 # Single-Layer Perceptron & the XOR Problem
