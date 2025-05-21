@@ -89,7 +89,7 @@ When trained on the XOR dataset, a single-layer perceptron typically achieves ar
 - Result: Only 2 out of 4 points classified correctly (50%).
 - Why 50%? Every straight line can slice off at most two “1”s from two “0”s in this arrangement.
 
-Because no single linear boundary can classify all four XOR points correctly, each time the perceptron updates its weights to fix one misclassified example, it inevitably misclassifies another. This back-and-forth continues every epoch, causing the accuracy to oscillate rather than converge—since the perceptron learning rule only guarantees convergence when the data are linearly separable. This oscillation can be thought of as the model getting “stuck” between local improvements: adjusting weights to help one example inevitably hurts another. As a result, the perceptron never converges and simply fluctuates between suboptimal outcomes, with the final reported accuracy merely reflecting a snapshot of the last iteration.
+Because no single linear boundary can classify all four XOR points correctly, each time the perceptron updates its weights to fix one misclassified example, it inevitably misclassifies another. This back-and-forth continues every epoch, causing the accuracy to oscillate rather than converge, since the perceptron learning rule only guarantees convergence when the data are linearly separable. This oscillation can be thought of as the model getting “stuck” between local improvements: adjusting weights to help one example inevitably hurts another. As a result, the perceptron never converges and simply fluctuates between suboptimal outcomes, with the final reported accuracy merely reflecting a snapshot of the last iteration.
 
 ## Theoretical Best: 75% Accuracy
 
@@ -149,7 +149,9 @@ This new feature perfectly matches the XOR output. Now the perceptron can simply
 
 predict 1 if x_3 ≥ 0.5
 
-For model training, we will be using weights: [1.0,-1.0] and bias: 0.
+For model training, we are using weights: [1.0,-1.0] and bias: 0, an under these parameters we can acheive 100% accuracy.   
+
+<img src="/Users/rohanxc/Developer/Semi-technical-Interview-Task/images/Screenshot 2025-05-21 at 21.58.17.png" width="500" alt="XOR not linearly separable"/>
 
 # Demonstration of why this feature mapping works
 
@@ -174,5 +176,16 @@ As you can see the prediction came correct and just like this other input will a
 
 By modifying the activation function alone, we allow a single-layer perceptron to "bend" the decision boundary in a way that correctly classifies all XOR cases. This demonstrates how critical activation functions are in neural networks—not just depth.
 
+## Citation
 
-
+```
+@article{pinto2024prelu,
+  title   = {PReLU: Yet Another Single-Layer Solution to the XOR Problem},
+  author  = {Pinto, Rafael C. and Tavares, Anderson R.},
+  journal = {arXiv preprint},
+  volume  = {arXiv:2409.10821},
+  year    = {2024},
+  month   = {sep},
+  url     = {https://doi.org/10.48550/arXiv.2409.10821}
+}
+```
