@@ -151,7 +151,7 @@ predict 1 if x_3 ≥ 0.5
 
 For model training, we are using weights: [1.0,-1.0] and bias: 0, an under these parameters we can acheive 100% accuracy.   
 
-<img src="/Users/rohanxc/Developer/Semi-technical-Interview-Task/images/Screenshot 2025-05-21 at 21.58.17.png" width="500" alt="XOR not linearly separable"/>
+<img src="images/Screenshot 2025-05-21 at 21.58.17.png" width="500" alt="XOR not linearly separable"/>
 
 # Demonstration of why this feature mapping works
 
