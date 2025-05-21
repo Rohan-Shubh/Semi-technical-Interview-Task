@@ -1,7 +1,7 @@
 # Semi-technical-Interview-Task
 
 <p align="center">
-  <img src="Screenshot 2025-05-21 at 13.04.36.png" alt="Single-layer Perceptron" width="800"/>
+  <img src="images/Screenshot 2025-05-21 at 13.04.36.png" alt="Single-layer Perceptron" width="800"/>
 </p>
 
 # Single-Layer Perceptron & the XOR Problem
@@ -39,7 +39,7 @@ A dataset is **linearly separable** if you can draw a straight line (in 2D) that
 
 Try to draw one line: whichever way you tilt, it will always misclassify at least one corner.
 
-<img src="Screenshot 2025-05-21 at 12.39.26.png" width="300" alt="XOR not linearly separable"/>
+<img src="images/Screenshot 2025-05-21 at 12.39.26.png" width="300" alt="XOR not linearly separable"/>
 
 ## Code Walkthrough
 
@@ -90,7 +90,7 @@ When trained on the XOR dataset, a single-layer perceptron typically achieves ar
 
 ## Observed Results: 50% Accuracy
 
-<img src="Screenshot 2025-05-21 at 12.45.48.png" width="500" alt="XOR not linearly separable"/>
+<img src="images/Screenshot 2025-05-21 at 12.45.48.png" width="500" alt="XOR not linearly separable"/>
 
 - Result: Only 2 out of 4 points classified correctly (50%).
 - Why 50%? Every straight line can slice off at most two “1”s from two “0”s in this arrangement.
@@ -121,7 +121,7 @@ no linear inequality can satisfy all four. The best you can do is misclassify ex
 
 3/4 = 75% accuracy
 
-<img src="Screenshot 2025-05-21 at 12.56.28.png" width="500" alt="XOR not linearly separable"/>
+<img src="images/Screenshot 2025-05-21 at 12.56.28.png" width="500" alt="XOR not linearly separable"/>
 ​
 
 For example, the test point [0.1, 0.9] falls into the ‘1’ region of that line, so it’s also predicted as 1.
